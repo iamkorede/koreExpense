@@ -55,7 +55,7 @@ export default function ExpenseSummary({ expenses }) {
       {/* Main total card showing overall spending */}
       <div className="total-card">
         <div className="total-label">Total Spent</div>
-        <div className="total-amount">${totalAmount.toFixed(2)}</div>
+        <div className="total-amount">₦{totalAmount.toFixed(2)}</div>
         <div className="total-count">
           {/* Show number of expenses with proper singular/plural */}
           {expenses.length} {expenses.length === 1 ? 'expense' : 'expenses'}
@@ -96,7 +96,7 @@ export default function ExpenseSummary({ expenses }) {
                     />
                   </div>
                   {/* Show exact amount spent */}
-                  <div className="amount">${amount.toFixed(2)}</div>
+                  <div className="amount">₦{amount.toFixed(2)}</div>
                 </div>
               )
             })}
@@ -111,7 +111,7 @@ export default function ExpenseSummary({ expenses }) {
           <div className="stat-label">Average</div>
           <div className="stat-value">
             {/* Calculate average by dividing total by number of expenses */}
-            ${expenses.length > 0 ? (totalAmount / expenses.length).toFixed(2) : '0.00'}
+            ₦{expenses.length > 0 ? (totalAmount / expenses.length).toFixed(2) : '0.00'}
           </div>
         </div>
         {/* Highest single expense amount */}
@@ -119,7 +119,7 @@ export default function ExpenseSummary({ expenses }) {
           <div className="stat-label">Highest</div>
           <div className="stat-value">
             {/* Find the maximum amount from all expenses */}
-            ${expenses.length > 0 ? Math.max(...expenses.map(e => e.amount)).toFixed(2) : '0.00'}
+            ₦{expenses.length > 0 ? Math.max(...expenses.map(e => e.amount)).toFixed(2) : '0.00'}
           </div>
         </div>
       </div>

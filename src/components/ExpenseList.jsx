@@ -61,7 +61,7 @@ export default function ExpenseList({ expenses, onDeleteExpense }) {
                 <div className="expense-details">
                   <div className="expense-header">
                     <p className="expense-description">{expense.description}</p>
-                    <p className="expense-amount">${expense.amount.toFixed(2)}</p>
+                    <p className="expense-amount">₦{expense.amount.toFixed(2)}</p>
                   </div>
                   {/* Category and date information */}
                   <div className="expense-footer">

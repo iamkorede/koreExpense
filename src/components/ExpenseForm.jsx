@@ -25,7 +25,7 @@ export default function ExpenseForm({ onAddExpense }) {
   const [formData, setFormData] = useState({
     description: '', // What the expense was for
     amount: '',      // How much was spent
-    category: 'Food', // Category of the expense (user-defined)
+    category: '', // Category of the expense (user-defined)
     date: new Date().toISOString().split('T')[0] // Today's date in YYYY-MM-DD format
   })
 
@@ -61,7 +61,7 @@ export default function ExpenseForm({ onAddExpense }) {
       setFormData({
         description: '',
         amount: '',
-        category: 'Food',
+        category: '',
         date: new Date().toISOString().split('T')[0]
       })
     }
@@ -83,13 +83,14 @@ export default function ExpenseForm({ onAddExpense }) {
             value={formData.description}
             onChange={handleChange}
             placeholder="e.g., Lunch at restaurant"
+            autoComplete='off'
             required
           />
         </div>
 
         {/* Amount field - how much was spent */}
         <div className="form-group">
-          <label htmlFor="amount">Amount ($)</label>
+          <label htmlFor="amount">Amount (₦)</label>
           <input
             type="number"
             id="amount"
@@ -99,6 +100,7 @@ export default function ExpenseForm({ onAddExpense }) {
             placeholder="0.00"
             step="0.01" // Allow 2 decimal places
             min="0" // Prevent negative amounts
+            autoComplete='off'
             required
           />
         </div>
@@ -113,6 +115,7 @@ export default function ExpenseForm({ onAddExpense }) {
             value={formData.category}
             onChange={handleChange}
             placeholder="e.g. Food, Transport, Entertainment"
+            autoComplete='off'
             required
           />
         </div>

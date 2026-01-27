@@ -173,7 +173,12 @@
 
 @media (max-width: 768px) {
   .total-card {
-    padding: 30px 20px;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  .total-label {
+    font-size: 0.9rem;
   }
 
   .total-amount {
@@ -181,14 +186,106 @@
   }
 
   .breakdown-card {
-    padding: 24px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .breakdown-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
   }
 
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .category-item {
     padding: 14px;
+    gap: 8px;
+  }
+
+  .stat-card {
+    padding: 18px;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-container {
+    gap: 16px;
+  }
+
+  .total-card {
+    padding: 20px 15px;
+  }
+
+  .total-label {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+
+  .total-amount {
+    font-size: 1.9rem;
+    margin-bottom: 6px;
+  }
+
+  .total-count {
+    font-size: 0.85rem;
+  }
+
+  .breakdown-card {
+    padding: 15px;
+  }
+
+  .breakdown-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .category-list {
+    gap: 12px;
+  }
+
+  .category-item {
+    padding: 12px;
+  }
+
+  .category-header {
+    margin-bottom: 6px;
+  }
+
+  .category-name {
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  .category-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  .percentage {
+    font-size: 0.9rem;
+  }
+
+  .category-item .amount {
+    font-size: 0.9rem;
+  }
+
+  .stat-card {
+    padding: 14px;
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
   }
 }

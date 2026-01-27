@@ -150,23 +150,80 @@
 
 @media (max-width: 768px) {
   .expense-list-container {
-    padding: 25px;
+    padding: 20px;
+    border-radius: 15px;
   }
 
   .expense-item {
-    padding: 14px;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .expense-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
   }
 
   .expense-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+  }
+
+  .expense-description {
+    font-size: 0.95rem;
   }
 
   .expense-amount {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .expense-footer {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .delete-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .expense-list-container {
+    padding: 15px;
+  }
+
+  .expense-list-container h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .expense-item {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .expense-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .expense-details {
+    min-width: 0;
+  }
+
+  .expense-description {
+    font-size: 0.85rem;
+  }
+
+  .expense-amount {
+    font-size: 0.85rem;
+  }
+
+  .delete-btn {
+    padding: 5px 10px;
+    font-size: 0.65rem;
   }
 }
