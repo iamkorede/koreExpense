@@ -6,9 +6,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
   min-height: 100vh;
-  color: #1e293b;
+  color: #4870af;
 }
 
 .app {
@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #051632 0%, #acb5c6 100%);
   color: white;
   padding: 40px 30px;
   border-radius: 20px;

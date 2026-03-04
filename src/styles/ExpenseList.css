@@ -1,5 +1,5 @@
 .expense-list-container {
-  background: white;
+  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
   border-radius: 20px;
   padding: 35px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
@@ -7,7 +7,7 @@
 }
 
 .expense-list-container h2 {
-  color: #1e293b;
+  color: #f8f8f8;
   margin-bottom: 25px;
   font-size: 1.6rem;
   font-weight: 700;
@@ -17,7 +17,7 @@
 .empty-state {
   text-align: center;
   padding: 80px 20px;
-  color: #94a3b8;
+  color: #3075d7;
 }
 
 .empty-state p {
@@ -28,7 +28,7 @@
 
 .empty-state .text-small {
   font-size: 0.95rem;
-  color: #cbd5e1;
+  color: #fafbfc;
 }
 
 .expense-list {
@@ -42,15 +42,15 @@
   align-items: center;
   gap: 18px;
   padding: 18px 20px;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
   border-radius: 15px;
   transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #bccde4;
   border-left: 4px solid transparent;
 }
 
 .expense-item:hover {
-  background: #f0f4f8;
+  background: #1058a1;
   transform: translateX(6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   border-left-color: #3b82f6;
@@ -85,7 +85,7 @@
 
 .expense-description {
   font-weight: 600;
-  color: #1e293b;
+  color: #f0f0f0;
   font-size: 1.05rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -94,7 +94,7 @@
 
 .expense-amount {
   font-weight: 700;
-  color: #3b82f6;
+  color: #d5dae3;
   font-size: 1.15rem;
   white-space: nowrap;
 }

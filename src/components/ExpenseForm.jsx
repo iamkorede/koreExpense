@@ -6,12 +6,12 @@ import '../styles/ExpenseForm.css'
 // Users can enter any category name, and it will use a default color if not predefined
 const DEFAULT_COLORS = {
   'Food': '#FF6B6B',
-  'Transport': '#4ECDC4',
+  'Transport': '#1b2020',
   'Entertainment': '#FFE66D',
   'Shopping': '#FF85C0',
   'Health': '#95E1D3',
   'Utilities': '#A8E6CF',
-  'Other': '#C7CEEA'
+  'Other': '#0e0f13'
 }
 
 /**
