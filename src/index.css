@@ -6,9 +6,10 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
+  background: white;
   min-height: 100vh;
   color: #4870af;
+
 }
 
 .app {
@@ -22,14 +23,15 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, #051632 0%, #acb5c6 100%);
+  background: rgb(254, 253, 253);
   color: white;
   padding: 40px 30px;
   border-radius: 20px;
   margin-bottom: 40px;
-  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+  box-shadow: none;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 3px solid rgba(82, 78, 78, 0.1);
+  text-align: center;
 }
 
 .header-content h1 {
@@ -37,12 +39,18 @@ body {
   margin-bottom: 8px;
   font-weight: 700;
   letter-spacing: -0.5px;
+  color: green;
 }
 
 .header-content p {
   font-size: 1.1rem;
   opacity: 0.95;
   font-weight: 500;
+  color: black;
+}
+
+.header-content h2 {
+  color: orange;
 }
 
 .main-content {

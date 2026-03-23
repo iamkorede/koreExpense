@@ -38,7 +38,8 @@ function App() {
         {/* Header section with title */}
         <header className="header">
           <div className="header-content">
-            <h1>KoreExpense</h1>
+            <h1>Welcome User</h1>
+            <h2>KoreExpense</h2>
             <p>Track your spending wisely</p>
           </div>
         </header>

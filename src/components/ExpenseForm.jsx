@@ -20,7 +20,7 @@ const DEFAULT_COLORS = {
  * Props:
  *   - onAddExpense: Callback function to handle adding a new expense
  */
-export default function ExpenseForm({ onAddExpense }) {
+export default function ExpenseForm({ onAddExpense}) {
   // Initialize form state with empty values and today's date
   const [formData, setFormData] = useState({
     description: '', // What the expense was for

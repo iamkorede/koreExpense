@@ -40,7 +40,7 @@ export default function ExpenseList({ expenses, onDeleteExpense }) {
       {/* Show empty state if no expenses, otherwise show expense list */}
       {sortedExpenses.length === 0 ? (
         <div className="empty-state">
-          <p>No expenses yet</p>
+          <p>No Expenses yet</p>
           <p className="text-small">Add your first expense to get started</p>
         </div>
       ) : (

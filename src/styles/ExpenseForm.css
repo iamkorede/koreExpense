@@ -1,10 +1,11 @@
 .expense-form-container {
-  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
+  background: white;
   border-radius: 20px;
   padding: 35px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+  box-shadow: black;
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: black;
+  border: 3px solid rgba(82, 78, 78, 0.1);
 }
 
 .expense-form-container:hover {
@@ -12,11 +13,12 @@
 }
 
 .expense-form-container h2 {
-  color: #ffffff;
+  color: black;
   margin-bottom: 28px;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.3px;
+  text-align: center;
 }
 
 .expense-form {
@@ -33,11 +35,12 @@
 
 .form-group label {
   font-weight: 600;
-  color: #d1d6de;
+  color: rgb(42, 40, 40);
   font-size: 0.95rem;
   letter-spacing: 0.3px;
   text-transform: uppercase;
   font-size: 0.85rem;
+  text-align: center;
 }
 
 .form-group input {
@@ -47,25 +50,27 @@
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-  background: #f7f7f7;
+  background: white;
+  text-align: center;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #3b82f6;
-  background: white;
+  border-color: black;
+  background: #e4d6d6;
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
 
 .form-group input::placeholder {
   color: #838485;
+  border: black;
 }
 
 
 
 .submit-btn {
   padding: 15px 24px;
-  background: linear-gradient(135deg, #000000 0%, #062f81 100%);
+  background: green;
   color: white;
   border: none;
   border-radius: 12px;
@@ -85,7 +90,7 @@
 
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 8px 25px rgba(93, 246, 59, 0.4);
 }
 
 .submit-btn:active {
