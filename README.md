@@ -1,16 +1,32 @@
-# React + Vite
+# 💰 KoreExpense
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and intuitive expense tracking app built with React and Vite, now with a real [Node/Express + MySQL + JWT backend](https://github.com/iamkorede/koreexpense-backend).
 
-Currently, two official plugins are available:
+## Features
+- **Accounts**: sign up and log in, expenses are saved per user in MySQL
+- **Add Expenses**: description, amount, category (custom categories supported), date
+- **7 Categories**: Food, Transport, Entertainment, Shopping, Health, Utilities, Other - each with unique colors and emojis
+- **Transaction History**: all expenses sorted by date, newest first, persisted server-side
+- **Smart Summary**: total spent, average per transaction, highest expense, top categories with percentages
+- **Delete Expenses**: one click
+- **Responsive Design**: works on desktop, tablet and mobile
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Quick Start
+1. Start the [backend](https://github.com/iamkorede/koreexpense-backend) on port 5000
+2. npm install
+3. start the dev server and open http://localhost:5173
 
-## React Compiler
+## Project Structure
+```
+src/
+├── api.js                    # Backend API client (auth + expenses)
+├── components/
+│   ├── Auth.jsx              # Sign up / log in screen
+│   ├── ExpenseForm.jsx       # Form to add new expenses
+│   ├── ExpenseList.jsx       # List of all transactions
+│   └── ExpenseSummary.jsx    # Summary and statistics
+├── App.jsx                   # Main app, auth gate + layout
+└── styles/                   # Component styles
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+MIT © 2026 Adekanbi Akorede
